@@ -1,0 +1,172 @@
+/* .topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+#img{
+	    height: 50px;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active link */
+/*
+.topnav a.active {
+     background-color: #aa04a8;
+    color: white;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  background-color: #d4d7f3;
+  align-items: center;
+  color: white;
+  border-bottom: 2px solid #fff;
+}
+
+img {
+  height: 50px;
+}
+
+.nav-logo {
+  font-size: 2rem;
+  margin: 0.5rem;
+  /* font-family: "Roboto Condensed", sans-serif; */
+}
+
+.nav-toggle {
+  position: absolute;
+  top: 1.2rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  width: 30px;
+  height: 21px;
+}
+
+.nav-toggle img {
+  width: 10px;
+  height: 10px;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  /* flex-direction: column; */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: rgb(15, 15, 15);
+  padding: 1rem;
+}
+
+.navbar-links li:hover {
+  background-color: cornflowerblue;
+}
+
+/* for submenu */
+
+.navbar-links > ul li ul {
+  display: none;
+}
+
+.navbar-links > ul li:hover ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-btn {
+  background-color: black;
+  color: #fff;
+  padding: 1em;
+  margin-right: 1em;
+}
+
+.profile-links > ul li {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.profile-links.active {
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .profile-btn {
+    display: none;
+  }
+
+  .signout {
+    display: none;
+  }
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links > ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
