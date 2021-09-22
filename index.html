@@ -26,49 +26,55 @@
   
   </head>
   <body>
-    <nav class="navbar" aria-label="Main Menu">        
-        <div class="nav-logo">
-          <img src="./logo.png" class="logo" alt="logo">         
+    <header>
+      
+    <nav class="navbar" aria-label="Main Menu">     
+         
+        <div class="nav-logo" tabindex="0" role="img" aria-label="Logo" >
+          <img src="./logo.png" class="logo" alt="company logo">         
         </div>
+        
 
-        <button class="nav-toggle">
-          <img src="./threelines.png" class="burger-menu" alt="">
-        </button>
+        <!-- <button aria-label="Click to open menu" id="nav-toggle" aria-controls="menu" aria-expanded="false"> -->
+          <button name="burger-menu" id="nav-toggle" aria-label="Click button to open menu links">
+            <img src="./threelines.png" alt="">
+          </button>
+   
 
-
-        <div role="menu" class="navbar-links">
+        <div class="navbar-links" tabindex="0" role="list" aria-label="Links">
           <ul>
-            <li role="menu-item">
+            <li>
               <a href="#">Link 1</a>
             </li>
-            <li role="menu-item" class="submenu-item" aria-expanded="false">
-              <a href="#">Link 2</a>
-                 <ul>
+            <li id="dropdown-toggle">
+              <a href="#" aria-haspopup="true">Link 2<span class="arrow"></span></a>
+                 <ul class="submenu-items" aria-hidden="true" aria-expanded="false">
                   <li><a href="#">Link Item 2</a></li>
                   <li><a href="#">Link Item 2</a></li>
                   <li><a href="#">Link Item 2</a></li>
                   <li><a href="#">Link Item 2</a></li>
                  </ul>
             </li>
-            <li role="menu-item">
+            <li>
               <a href="#">Link 3</a>
             </li>
-            <li role="menu-item">
+            <li>
               <a href="#">Link 4</a>
             </li>
           </ul>
         </div>
 
-        <button aria-label="Click to open profile" onclick="openProfile()" class="profile-btn">Profile John Doe</button>
-        <div class="profile-links" role="menu-profile">
-          <ul>              
-              <li role="menu-profile-item><a href="#">Link</a></li>
-              <li role="menu-profile-item><a href="#">Link</a></li>
-              <li class="signout" role="menu-profile-item><a href="#">Sign Out</a></li>
+        <div class="navbar-profile" tabindex="0" >
+          <button aria-label="Click to open profile" aria-haspopup="true"  onclick="openProfile()" class="profile-btn">Profile John Doe</button>
+          <ul class="profile-links" aria-hidden="true" aria-expanded="false">              
+              <li class="plink"><a href="#">Link</a></li>
+              <li class="plink"><a href="#">Link</a></li>
+              <li id="signout"><a href="#">Sign Out</a></li>
           </ul>
         </div>
 
-
     </nav>
+  </header>
+  <main></main>
   </body>
   </html>
