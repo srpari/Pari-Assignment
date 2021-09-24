@@ -51,7 +51,6 @@ window.onload = function(){
       }
   }
 
-  // sets given list style to inline 'display: block;'
   function open(el) {
     el.style.display = 'flex';
     el.setAttribute('aria-hidden', 'false');
